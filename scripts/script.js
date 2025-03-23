@@ -28,6 +28,7 @@ function startGame() {
     }
 }
 // create random function for rgb values, 0-255 for each value, add to background thing below
+// this is to test a commit
 document.querySelector("#mainDiv").addEventListener("mouseover", (event) => {
     if (event.target.classList.contains("gridBox")) {
         event.target.style["background-color"] = "black";
