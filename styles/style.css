@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+    height: 100vh;
+}
+#startButton {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+#mainDiv {
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1000px;
+    height: 1000px;
+    z-index: 1;
+}
+
+.gridBox {
+    background-color: blue;
+    flex-grow: 1;
+    width: calc(100% / var(--cols));
+    height: calc(100% / var(--cols));
+    min-width: 1px;
+    min-height: 1px;
+}
